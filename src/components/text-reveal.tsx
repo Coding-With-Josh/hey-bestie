@@ -34,6 +34,10 @@ const birthdayPhotos = [
     src: "/image-6.jpeg",
     alt: "A black-and-white photo of my best friend in a car",
   },
+  {
+    src: "/image-7.jpeg",
+    alt: "A photo of my best friend in a pink shirt, sitting on a railing",
+  },
 ];
 
 interface TextRevealProps {

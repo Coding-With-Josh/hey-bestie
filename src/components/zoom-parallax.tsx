@@ -26,6 +26,7 @@ const imagePositions = [
   "relative left-[22vw] top-[5dvh] h-[23dvh] w-[28vw] sm:left-[27.5vw] sm:top-0 sm:h-[25dvh] sm:w-[25vw]",
   "relative left-[-27vw] top-[25dvh] h-[24dvh] w-[30vw] sm:left-[5vw] sm:top-[27.5dvh] sm:h-[25dvh] sm:w-[20vw]",
   "relative left-[25vw] top-[26dvh] h-[24dvh] w-[28vw] sm:left-[-22.5vw] sm:top-[27.5dvh] sm:h-[25dvh] sm:w-[30vw]",
+  "relative left-[-2vw] top-[-34dvh] h-[22dvh] w-[20vw] sm:left-[25vw] sm:top-[22.5vh] sm:h-[15vh] sm:w-[15vw]",
 ];
 
 export function ZoomParallax({
@@ -67,7 +68,8 @@ export function ZoomParallax({
   const scale5 = useTransform(scrollProgress, [0, 1], ["scale(1)", "scale(5)"]);
   const scale6 = useTransform(scrollProgress, [0, 1], ["scale(1)", "scale(6)"]);
   const scale8 = useTransform(scrollProgress, [0, 1], ["scale(1)", "scale(8)"]);
-  const scales = [scale4, scale5, scale6, scale5, scale6, scale8];
+  const scale9 = useTransform(scrollProgress, [0, 1], ["scale(1)", "scale(9)"]);
+  const scales = [scale4, scale5, scale6, scale5, scale6, scale8, scale9];
 
   return (
     <section
